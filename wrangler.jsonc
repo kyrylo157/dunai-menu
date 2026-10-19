@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dunai-menu",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dunai-menu",
+      // replaced with the real id after `wrangler d1 create dunai-menu`
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [{ "binding": "PHOTOS", "bucket_name": "dunai-menu-photos" }]
+  // secrets (wrangler secret put): BOT_TOKEN, ADMIN_PASSWORD, WEBHOOK_SECRET
+}

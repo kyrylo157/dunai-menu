@@ -1,0 +1,3589 @@
+[
+    {
+        "name":  "Італійський сніданок 300г",
+        "productId":  13,
+        "description":  null,
+        "categoryPosId":  4,
+        "categoryName":  "Сніданки",
+        "categoryUrl":  "category4",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Англійський сніданок 250г",
+        "productId":  12,
+        "description":  null,
+        "categoryPosId":  4,
+        "categoryName":  "Сніданки",
+        "categoryUrl":  "category4",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сирники 220г",
+        "productId":  14,
+        "description":  null,
+        "categoryPosId":  4,
+        "categoryName":  "Сніданки",
+        "categoryUrl":  "category4",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/51aae4e9-93e7-45a4-b3af-86c531225a96-image.jpeg",
+        "price":  190,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Панкейки з Nutella ",
+        "productId":  327,
+        "description":  null,
+        "categoryPosId":  4,
+        "categoryName":  "Сніданки",
+        "categoryUrl":  "category4",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/f889bd6c-4bc5-4c76-bf70-f0f841c33a67-image.jpeg",
+        "price":  180,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Шакшука 300г",
+        "productId":  15,
+        "description":  null,
+        "categoryPosId":  4,
+        "categoryName":  "Сніданки",
+        "categoryUrl":  "category4",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/5be577c9-0d13-452e-8c81-31b860b7fa25-image.jpeg",
+        "price":  190,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Арахіс 100гр",
+        "productId":  182,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/71ef8fad-b4c3-4fcb-ab75-e14458b8df89-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Чіпси пачка 100г",
+        "productId":  296,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/a6c4862d-8d9d-447e-9715-66bfff622697-image.jpeg",
+        "price":  110,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Ікра з печених овочів 250г",
+        "productId":  16,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  null,
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Антипасті 250г",
+        "productId":  19,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/640c15ce-dea9-49b5-a6fa-9597835adf53-image.jpeg",
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Гарлики з часником ",
+        "productId":  116,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  null,
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Курячі чіпси 100г",
+        "productId":  268,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/7c09ef92-8470-42d6-9c72-cc1042b34ec5-image.jpeg",
+        "price":  150,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Оселедець з картоплею 300г",
+        "productId":  255,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/f3437db1-a48e-48c8-af5e-c82a284fefea-image.jpeg",
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Паштет курячий з тостами 200г",
+        "productId":  81,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  null,
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Пивна дошка(арахіс,гарлики,рибка) 300г",
+        "productId":  22,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  null,
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Прошуто крудо 50г",
+        "productId":  17,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6da4d1f9-a591-4acb-a999-bcca72337e85-image.jpeg",
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сир фрі 200г",
+        "productId":  18,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/14024230-6fe1-42a0-80cf-2eaf617dcbfe-image.jpeg",
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сирна тарілка 150/50г",
+        "productId":  20,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6133ae20-6958-43b7-8ca9-08e3e2302db0-image.jpeg",
+        "price":  340,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Тріо брускет 370г",
+        "productId":  21,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/12c318e1-9ccd-4a6f-b405-23bb93e67319-image.jpeg",
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Фруктова тарілка ",
+        "productId":  188,
+        "description":  "Сезонні фрукти",
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/61476010-33b2-4acb-ae91-a513b1af3428-image.jpeg",
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сет креветок 550г ",
+        "productId":  419,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/28375a55-6bca-4568-acb5-7fc8593ead8e-image.jpeg",
+        "price":  780,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Пивна дошка(м\u0027ясні чипси,кальмар,арахіс)300г",
+        "productId":  452,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  null,
+        "price":  380,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Попкорн",
+        "productId":  472,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/971fde41-bbd8-4420-b167-f0a6926b1d63-image.jpeg",
+        "price":  50,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Соління",
+        "productId":  80,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/3101aaf0-b38e-4ef8-9b42-83205d35707e-image.jpeg",
+        "price":  180,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Овочева тарілка 300г",
+        "productId":  85,
+        "description":  null,
+        "categoryPosId":  5,
+        "categoryName":  "Закуски",
+        "categoryUrl":  "category5",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/f4fc7685-7020-47af-9976-dc8c553c67b3-image.jpeg",
+        "price":  220,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Курячий бульйон 350г",
+        "productId":  24,
+        "description":  null,
+        "categoryPosId":  6,
+        "categoryName":  "Перші страви",
+        "categoryUrl":  "category6",
+        "photo":  null,
+        "price":  130,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Борщ червоний 350/50/50г",
+        "productId":  23,
+        "description":  null,
+        "categoryPosId":  6,
+        "categoryName":  "Перші страви",
+        "categoryUrl":  "category6",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/d5d3573d-873c-4f1b-b133-94afcd101c80-image.jpeg",
+        "price":  145,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Солянка",
+        "productId":  227,
+        "description":  null,
+        "categoryPosId":  6,
+        "categoryName":  "Перші страви",
+        "categoryUrl":  "category6",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Грибний крем-суп 250г",
+        "productId":  28,
+        "description":  null,
+        "categoryPosId":  6,
+        "categoryName":  "Перші страви",
+        "categoryUrl":  "category6",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/95089093-7e76-427e-8d21-16148ee35355-image.jpeg",
+        "price":  190,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Том ям з креветкою 320г",
+        "productId":  26,
+        "description":  null,
+        "categoryPosId":  6,
+        "categoryName":  "Перші страви",
+        "categoryUrl":  "category6",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/bf30577b-e9b6-45f0-8c1f-cd7fccf3e074-image.jpeg",
+        "price":  270,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Том ям з лососем 320г ",
+        "productId":  27,
+        "description":  null,
+        "categoryPosId":  6,
+        "categoryName":  "Перші страви",
+        "categoryUrl":  "category6",
+        "photo":  null,
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Том ям з лососем та креветкою",
+        "productId":  230,
+        "description":  null,
+        "categoryPosId":  6,
+        "categoryName":  "Перші страви",
+        "categoryUrl":  "category6",
+        "photo":  null,
+        "price":  340,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Салат Грецький 250г",
+        "productId":  31,
+        "description":  null,
+        "categoryPosId":  7,
+        "categoryName":  "Салати",
+        "categoryUrl":  "category7",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/24618b6a-f96d-4c02-b453-ca79a6fa7a20-image.jpeg",
+        "price":  210,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Салат Цезар 350г",
+        "productId":  29,
+        "description":  null,
+        "categoryPosId":  7,
+        "categoryName":  "Салати",
+        "categoryUrl":  "category7",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/bf5848bd-54c3-44c9-8a92-52f04bc527a6-image.jpeg",
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Салат Цезар з креветкою 350г",
+        "productId":  30,
+        "description":  null,
+        "categoryPosId":  7,
+        "categoryName":  "Салати",
+        "categoryUrl":  "category7",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/05551434-df7d-48da-a11c-19e211da2a0a-image.jpeg",
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Салат з курячої печінки",
+        "productId":  283,
+        "description":  null,
+        "categoryPosId":  7,
+        "categoryName":  "Салати",
+        "categoryUrl":  "category7",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/8f143b63-e60a-4411-9e9b-751a5ac5b3c7-image.jpeg",
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Салат з цитрусом та креветкою 350г",
+        "productId":  34,
+        "description":  null,
+        "categoryPosId":  7,
+        "categoryName":  "Салати",
+        "categoryUrl":  "category7",
+        "photo":  null,
+        "price":  340,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Теплий салат з телятиною 350г",
+        "productId":  33,
+        "description":  null,
+        "categoryPosId":  7,
+        "categoryName":  "Салати",
+        "categoryUrl":  "category7",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/bfa527ea-3ffa-49e6-a704-a9790b0cdd64-image.jpeg",
+        "price":  340,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Салат з морепродуктами ",
+        "productId":  298,
+        "description":  null,
+        "categoryPosId":  7,
+        "categoryName":  "Салати",
+        "categoryUrl":  "category7",
+        "photo":  null,
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Піца Папероні",
+        "productId":  35,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  null,
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Піца Гавайська",
+        "productId":  38,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/eacfa26c-09f1-4602-855b-52b5e92497d0-image.jpeg",
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Піца 4 м\u0027яса ",
+        "productId":  40,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/f8832ce4-f1f5-476e-8f81-a2bafc8c9adf-image.jpeg",
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Піца 4 сири ",
+        "productId":  39,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/0006e360-6716-413a-ad77-cfd43f9aab0d-image.jpeg",
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Піца з морепродуктами ",
+        "productId":  44,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  null,
+        "price":  340,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сирне піде з яєчним жовтком",
+        "productId":  212,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/24035862-477b-4e3c-ac9a-113f7ce31a59-image.jpeg",
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Римська піца Цезар",
+        "productId":  403,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/83dac599-c474-4b81-ab43-23bc60882ebd-image.jpeg",
+        "price":  310,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Римська піца з креветками та руколою",
+        "productId":  404,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  null,
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Римська піца з прошуто",
+        "productId":  405,
+        "description":  null,
+        "categoryPosId":  8,
+        "categoryName":  "Піца",
+        "categoryUrl":  "category8",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/24ab8e49-3dfe-4299-ba86-cb6b6f6d7de0-image.jpeg",
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Чікен бургер",
+        "productId":  41,
+        "description":  null,
+        "categoryPosId":  9,
+        "categoryName":  "Бургери ",
+        "categoryUrl":  "category9",
+        "photo":  null,
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Бургер з телятиною",
+        "productId":  42,
+        "description":  null,
+        "categoryPosId":  9,
+        "categoryName":  "Бургери ",
+        "categoryUrl":  "category9",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/3469bb38-f4b7-4d58-9a69-abe6e7af3772-image.jpeg",
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сендвіч з чіабати ",
+        "productId":  36,
+        "description":  null,
+        "categoryPosId":  9,
+        "categoryName":  "Бургери ",
+        "categoryUrl":  "category9",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6e983847-5a4d-46e5-9879-06a860aca002-image.jpeg",
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Бефстроганів з курятини 300г",
+        "productId":  49,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Бефстроганів з телятини 300г",
+        "productId":  295,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Вареники з капустою 300г",
+        "productId":  373,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  130,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Вареники з картоплею 300г",
+        "productId":  372,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Вареники з сиром ",
+        "productId":  389,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Гаряча пательня телятина/свинина ",
+        "productId":  279,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6a635933-7ce0-4b88-b710-e93f3464b1de-image.jpeg",
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Гаряча пательня з куркою 300г",
+        "productId":  48,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6e83b2b3-9125-4fba-843e-204c79b4a015-image.jpeg",
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Деруни ",
+        "productId":  251,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/e1622ddf-409b-420d-a45c-583a6ef1207c-image.jpeg",
+        "price":  180,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Креветки в ананасовому соусі 250г",
+        "productId":  56,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/4b5b00e0-5e0f-4c80-a67d-a488b03e6b85-image.jpeg",
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Креветки в панко 250г",
+        "productId":  55,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/0a3bea04-c980-4421-92c5-5de9edffa0cd-image.jpeg",
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Креветки в томатному соусі 250г",
+        "productId":  57,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Курячі крильця у медовому соусі ",
+        "productId":  328,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Лосось запечений з сиром та шпинатом 150/50/80г",
+        "productId":  58,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  390,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Мамалига з куркою",
+        "productId":  216,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/c588528c-4fb9-4033-956f-e9bed44386c5-image.jpeg",
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Медальйони з телятини 300г",
+        "productId":  320,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  360,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Паста Фетучіні 270г",
+        "productId":  50,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Пельмені зі свининою 300г",
+        "productId":  375,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  190,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Соте з морепродуктів 300г",
+        "productId":  281,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  390,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Фунчоза з куркою 270г",
+        "productId":  53,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/f4cc9ed4-12c1-47bb-92ff-4e542bfff4ad-image.jpeg",
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Фунчоза з морепродуктами 270г",
+        "productId":  54,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  340,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Вареники з вішнею 300г",
+        "productId":  476,
+        "description":  null,
+        "categoryPosId":  11,
+        "categoryName":  "Основні страви",
+        "categoryUrl":  "category11",
+        "photo":  null,
+        "price":  140,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сулугуні у лаваші 200г",
+        "productId":  65,
+        "description":  null,
+        "categoryPosId":  12,
+        "categoryName":  "Мангал",
+        "categoryUrl":  "category12",
+        "photo":  null,
+        "price":  220,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Шашлик курячий 250/50г",
+        "productId":  59,
+        "description":  null,
+        "categoryPosId":  12,
+        "categoryName":  "Мангал",
+        "categoryUrl":  "category12",
+        "photo":  null,
+        "price":  250,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Шашлик свинячий 250/50г",
+        "productId":  60,
+        "description":  null,
+        "categoryPosId":  12,
+        "categoryName":  "Мангал",
+        "categoryUrl":  "category12",
+        "photo":  null,
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Люля - суші 250г",
+        "productId":  63,
+        "description":  null,
+        "categoryPosId":  12,
+        "categoryName":  "Мангал",
+        "categoryUrl":  "category12",
+        "photo":  null,
+        "price":  250,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Овочі гриль 300г",
+        "productId":  67,
+        "description":  null,
+        "categoryPosId":  12,
+        "categoryName":  "Мангал",
+        "categoryUrl":  "category12",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/d5e99903-0a3e-4463-a71f-e32fc1a06acf-image.jpeg",
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Каре ягня 300г",
+        "productId":  335,
+        "description":  null,
+        "categoryPosId":  12,
+        "categoryName":  "Мангал",
+        "categoryUrl":  "category12",
+        "photo":  null,
+        "price":  390,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Скумбрія 350г",
+        "productId":  61,
+        "description":  null,
+        "categoryPosId":  12,
+        "categoryName":  "Мангал",
+        "categoryUrl":  "category12",
+        "photo":  null,
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Курча табака 500г",
+        "productId":  64,
+        "description":  null,
+        "categoryPosId":  12,
+        "categoryName":  "Мангал",
+        "categoryUrl":  "category12",
+        "photo":  null,
+        "price":  350,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Картопля по-селянськи 200г",
+        "productId":  69,
+        "description":  null,
+        "categoryPosId":  13,
+        "categoryName":  "Гарніри",
+        "categoryUrl":  "category13",
+        "photo":  null,
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Картопля фрі 200г",
+        "productId":  68,
+        "description":  null,
+        "categoryPosId":  13,
+        "categoryName":  "Гарніри",
+        "categoryUrl":  "category13",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/5333b510-1861-4c03-9387-2af22f44d217-image.jpeg",
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Картопляне пюре 200г",
+        "productId":  361,
+        "description":  null,
+        "categoryPosId":  13,
+        "categoryName":  "Гарніри",
+        "categoryUrl":  "category13",
+        "photo":  null,
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Мамалига",
+        "productId":  449,
+        "description":  null,
+        "categoryPosId":  13,
+        "categoryName":  "Гарніри",
+        "categoryUrl":  "category13",
+        "photo":  null,
+        "price":  140,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Морозиво у кульках 50гр",
+        "productId":  149,
+        "description":  null,
+        "categoryPosId":  14,
+        "categoryName":  "Десерти",
+        "categoryUrl":  "category14",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/a43f905c-aec3-4bc3-8d9e-12832a6f7dc4-image.jpeg",
+        "price":  50,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Морозиво у кульках 150г",
+        "productId":  277,
+        "description":  null,
+        "categoryPosId":  14,
+        "categoryName":  "Десерти",
+        "categoryUrl":  "category14",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/97b56261-5dc4-4f03-a77f-c9e268198fda-image.jpeg",
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Шоколадний фондан 100/30г",
+        "productId":  70,
+        "description":  null,
+        "categoryPosId":  14,
+        "categoryName":  "Десерти",
+        "categoryUrl":  "category14",
+        "photo":  null,
+        "price":  210,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Штрудель 150/30г",
+        "productId":  71,
+        "description":  null,
+        "categoryPosId":  14,
+        "categoryName":  "Десерти",
+        "categoryUrl":  "category14",
+        "photo":  null,
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Яблучна тарта 400/50г ",
+        "productId":  72,
+        "description":  null,
+        "categoryPosId":  14,
+        "categoryName":  "Десерти",
+        "categoryUrl":  "category14",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/334ec553-c0b0-45ee-a865-1a2615755bd8-image.jpeg",
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Pepsi 0.5",
+        "productId":  94,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/ff210c32-343a-4be7-8f80-b1d978b7fb2b-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Pepsi жб",
+        "productId":  133,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/876c7567-7c7e-4f9a-91c8-6ed34ccd364e-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Pepsi скло 0,3л",
+        "productId":  91,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/9cf61204-f3ed-4eb6-9908-6de3d81b522e-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Швепс 0.7л",
+        "productId":  362,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/fec805be-0478-4c1b-9131-866e3ec07f6e-image.jpeg",
+        "price":  80,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Avalon 0,5л",
+        "productId":  240,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/1eff4538-cd1e-4b7a-bce5-2a83787e9db8-image.jpeg",
+        "price":  35,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Avalon 1,5л",
+        "productId":  241,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/e559a123-a627-415f-b763-c2f282942858-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Лимонад",
+        "productId":  130,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/d593ac00-8f0b-4500-91b0-cebbba5db52c-image.jpeg",
+        "price":  80,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Лимонад із сиропом",
+        "productId":  159,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/e18810be-26e9-47ca-b78b-5d4ac0fa7039-image.jpeg",
+        "price":  90,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Лимонад 1л",
+        "productId":  368,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6dac2507-f753-4461-afaf-57eea7f57d86-image.jpeg",
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сік 0,25л",
+        "productId":  98,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  null,
+        "price":  50,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Сік 1л",
+        "productId":  390,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/0629eb69-af4d-47f8-92e3-31ca700aaa37-image.jpeg",
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Фреш апельсиновий 250г",
+        "productId":  198,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  null,
+        "price":  240,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Компот 1л",
+        "productId":  324,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Pepsi 2л",
+        "productId":  407,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/167e8050-ad8b-4192-b9af-8a507b387010-image.jpeg",
+        "price":  140,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Pepsi 1л",
+        "productId":  408,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/64938c8f-3696-4074-aa5f-7a207fb1667f-image.jpeg",
+        "price":  100,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Молочний шейк 350г",
+        "productId":  229,
+        "description":  null,
+        "categoryPosId":  3,
+        "categoryName":  "Холодні напої",
+        "categoryUrl":  "category3",
+        "photo":  null,
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Еспресо",
+        "productId":  105,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  30,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Еспресо з молоком 110 мл",
+        "productId":  287,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  30,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Амерікано",
+        "productId":  103,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  30,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Амерікано з молоком",
+        "productId":  104,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  50,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Капучино 250 мл",
+        "productId":  3,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/7433537c-1efa-4e8d-bd4d-11305a3ee2cc-image.jpeg",
+        "price":  55,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Ірландский віскв 340 мл",
+        "productId":  158,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  50,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Какао з маршмелоу",
+        "productId":  218,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Лате",
+        "productId":  106,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  65,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Бамбл 400мл",
+        "productId":  461,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  90,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Айс латте 400мл",
+        "productId":  462,
+        "description":  null,
+        "categoryPosId":  1,
+        "categoryName":  "Кава",
+        "categoryUrl":  "category1",
+        "photo":  null,
+        "price":  90,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Котлети з пюре 100/150г",
+        "productId":  43,
+        "description":  null,
+        "categoryPosId":  10,
+        "categoryName":  "Дитяче меню",
+        "categoryUrl":  "category10",
+        "photo":  null,
+        "price":  190,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Куряча відбивна ",
+        "productId":  316,
+        "description":  null,
+        "categoryPosId":  10,
+        "categoryName":  "Дитяче меню",
+        "categoryUrl":  "category10",
+        "photo":  null,
+        "price":  140,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Нагетси 150г",
+        "productId":  47,
+        "description":  null,
+        "categoryPosId":  10,
+        "categoryName":  "Дитяче меню",
+        "categoryUrl":  "category10",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Спагетті з сиром 160г",
+        "productId":  45,
+        "description":  null,
+        "categoryPosId":  10,
+        "categoryName":  "Дитяче меню",
+        "categoryUrl":  "category10",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Свиняча відбивна ",
+        "productId":  267,
+        "description":  null,
+        "categoryPosId":  10,
+        "categoryName":  "Дитяче меню",
+        "categoryUrl":  "category10",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Джин Beefeater 25 мл",
+        "productId":  272,
+        "description":  null,
+        "categoryPosId":  33,
+        "categoryName":  "Джин",
+        "categoryUrl":  "category33",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/a20208bc-0a53-4beb-b621-bf4d5ac38bd5-image.jpeg",
+        "price":  70,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Джин Beefeater 50 мл",
+        "productId":  252,
+        "description":  null,
+        "categoryPosId":  33,
+        "categoryName":  "Джин",
+        "categoryUrl":  "category33",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/daae0e79-d72e-433d-be79-2c8654a868f3-image.jpeg",
+        "price":  140,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Джин Beefeater 0.7л",
+        "productId":  369,
+        "description":  null,
+        "categoryPosId":  33,
+        "categoryName":  "Джин",
+        "categoryUrl":  "category33",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6e333b44-6ea7-4b11-a13a-e984e32b8a82-image.jpeg",
+        "price":  1300,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Текила срібла 25 мл",
+        "productId":  237,
+        "description":  null,
+        "categoryPosId":  32,
+        "categoryName":  "Текіла",
+        "categoryUrl":  "category32",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/57901478-2b6c-4dd9-a2c1-8e7e962b7c0b-image.jpeg",
+        "price":  65,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Текила срібла 50 мл",
+        "productId":  243,
+        "description":  null,
+        "categoryPosId":  32,
+        "categoryName":  "Текіла",
+        "categoryUrl":  "category32",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/3b36cc3d-679d-4e9f-9427-0837c65ec21a-image.jpeg",
+        "price":  130,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Текіла срібла 1л",
+        "productId":  438,
+        "description":  null,
+        "categoryPosId":  32,
+        "categoryName":  "Текіла",
+        "categoryUrl":  "category32",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/78a6ca36-d37c-43c7-8a03-f5533ecfde02-image.jpeg",
+        "price":  1550,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Апероль",
+        "productId":  150,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/54f76d3e-9443-4fed-b70f-879a92afeb3c-image.jpeg",
+        "price":  190,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Голуба лагуна б/а",
+        "productId":  220,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Голуба лагуна",
+        "productId":  206,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  210,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Мохiто б/а",
+        "productId":  314,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  100,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Мохіто класичний",
+        "productId":  304,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  140,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Піна Колада б/а",
+        "productId":  187,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  160,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Піна-Колада",
+        "productId":  157,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Дайкірі",
+        "productId":  288,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  180,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Манго-Коблер",
+        "productId":  275,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Джин-тонік",
+        "productId":  209,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  190,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Текила Санрайз",
+        "productId":  276,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  210,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Космополітен ",
+        "productId":  278,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  180,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Кровава Мері ",
+        "productId":  109,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  170,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Лонг Айленд",
+        "productId":  232,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Маргарита ",
+        "productId":  263,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  190,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Кокосовий мохіто (білий ром, лікер малібу)",
+        "productId":  474,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  180,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Негроні",
+        "productId":  475,
+        "description":  null,
+        "categoryPosId":  29,
+        "categoryName":  "Коктейлі",
+        "categoryUrl":  "category29",
+        "photo":  null,
+        "price":  250,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Аджарі 3* 50мл",
+        "productId":  142,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/a0896940-e85f-407c-abcd-f46ede00c8f8-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Аджарі 3* 0,5л",
+        "productId":  99,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/9f43d0bb-abdc-4a54-ac8f-e0a42c863dd7-image.jpeg",
+        "price":  380,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Аджарі 5* 50мл",
+        "productId":  143,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/710b2c38-8988-4c60-9089-8117c45fdf2c-image.jpeg",
+        "price":  70,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Аджарі 5* 0,5л",
+        "productId":  100,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/f440e6a3-d0c5-4616-bcca-c1d513157e00-image.jpeg",
+        "price":  480,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Martell VS 0.50",
+        "productId":  293,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  null,
+        "price":  200,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Canoni 3*",
+        "productId":  436,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/aa6bad9e-1b89-43ef-9201-78522b330cb4-image.jpeg",
+        "price":  400,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Canoni 3* 50мл",
+        "productId":  439,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/e098ce7c-5582-44f8-b17f-92837a3d69bf-image.jpeg",
+        "price":  65,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Klinkov VS 0.5л",
+        "productId":  440,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/5d96b166-4c00-4c29-b53f-a433235554ef-image.jpeg",
+        "price":  460,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Klinkov VS 50ml",
+        "productId":  441,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/e7e17658-aa85-42ae-a01f-0fc1730a23d0-image.jpeg",
+        "price":  70,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Legenda Armenia 3* 0.5л",
+        "productId":  442,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/e0e0f6e2-43f6-4adc-ab01-f48eb2c87e94-image.jpeg",
+        "price":  560,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Legenda Armenia 3* 50ml",
+        "productId":  443,
+        "description":  null,
+        "categoryPosId":  17,
+        "categoryName":  "Коньяк",
+        "categoryUrl":  "category17",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6edff872-18a6-4819-a78b-a0e44950b6bd-image.jpeg",
+        "price":  85,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Jagermeister 50ml",
+        "productId":  165,
+        "description":  null,
+        "categoryPosId":  28,
+        "categoryName":  "Настойка",
+        "categoryUrl":  "category28",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6e42e842-75ef-45dc-aba3-4cb22902cc0f-image.jpeg",
+        "price":  130,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Jagermeister 0.5л",
+        "productId":  246,
+        "description":  null,
+        "categoryPosId":  28,
+        "categoryName":  "Настойка",
+        "categoryUrl":  "category28",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6c1745e9-ff87-4ba4-a63e-4bd152e134be-image.jpeg",
+        "price":  850,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Becherovka 50мл",
+        "productId":  171,
+        "description":  null,
+        "categoryPosId":  28,
+        "categoryName":  "Настойка",
+        "categoryUrl":  "category28",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/7a5c1755-6f1f-4c05-b62b-8c8f5085ddc6-image.jpeg",
+        "price":  90,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Martini bianco 1л",
+        "productId":  172,
+        "description":  null,
+        "categoryPosId":  27,
+        "categoryName":  "Вермут",
+        "categoryUrl":  "category27",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/3a8baac5-acac-4a96-a8d5-79d37c163b7e-image.jpeg",
+        "price":  620,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Martini bianco 100ml",
+        "productId":  453,
+        "description":  null,
+        "categoryPosId":  27,
+        "categoryName":  "Вермут",
+        "categoryUrl":  "category27",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/2f00a16c-28d6-49e8-941d-28a6ae43eb8f-image.jpeg",
+        "price":  90,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Capitan Morgan 50ml",
+        "productId":  169,
+        "description":  null,
+        "categoryPosId":  26,
+        "categoryName":  "Ром",
+        "categoryUrl":  "category26",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/68a5385e-5f45-484d-af39-a1521b44c7db-image.jpeg",
+        "price":  110,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Capitan Morgan 1л",
+        "productId":  176,
+        "description":  null,
+        "categoryPosId":  26,
+        "categoryName":  "Ром",
+        "categoryUrl":  "category26",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/15ba621a-443f-46e4-8f91-b2d6dfc03449-image.jpeg",
+        "price":  1200,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Ром Bacardi чорний 50мл",
+        "productId":  355,
+        "description":  null,
+        "categoryPosId":  26,
+        "categoryName":  "Ром",
+        "categoryUrl":  "category26",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/4a9d7886-091c-4ce9-af59-2c50cee7c854-image.jpeg",
+        "price":  110,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Ром Bacardi білий 50мл",
+        "productId":  358,
+        "description":  null,
+        "categoryPosId":  26,
+        "categoryName":  "Ром",
+        "categoryUrl":  "category26",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/f5674c57-3638-4b9f-b76f-06c4ad1e8ede-image.jpeg",
+        "price":  110,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Bacardi 1л",
+        "productId":  432,
+        "description":  null,
+        "categoryPosId":  26,
+        "categoryName":  "Ром",
+        "categoryUrl":  "category26",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/b49ae364-d287-4881-9523-5c3f9b9e9582-image.jpeg",
+        "price":  1600,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Oakheart ром 1л",
+        "productId":  445,
+        "description":  null,
+        "categoryPosId":  26,
+        "categoryName":  "Ром",
+        "categoryUrl":  "category26",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/d1b14f81-6fb4-456b-b3f5-083e8657acab-image.jpeg",
+        "price":  1450,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Oakheart ром 50ml",
+        "productId":  446,
+        "description":  null,
+        "categoryPosId":  26,
+        "categoryName":  "Ром",
+        "categoryUrl":  "category26",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/193c2355-977f-4f0e-ad81-f991274648b9-image.jpeg",
+        "price":  110,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Шампанське Fragolino",
+        "productId":  117,
+        "description":  null,
+        "categoryPosId":  18,
+        "categoryName":  "Шампанське",
+        "categoryUrl":  "category18",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/015d41bb-c900-4790-9554-a341414a810e-image.jpeg",
+        "price":  290,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Morengo",
+        "productId":  356,
+        "description":  null,
+        "categoryPosId":  18,
+        "categoryName":  "Шампанське",
+        "categoryUrl":  "category18",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/dde61726-3206-44cd-94c3-f1d4e6ce7aa7-image.jpeg",
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Villa Krim Asti бут.",
+        "productId":  179,
+        "description":  null,
+        "categoryPosId":  18,
+        "categoryName":  "Шампанське",
+        "categoryUrl":  "category18",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/21c76c5e-627f-40de-88ca-eb3e38bd225a-image.jpeg",
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Villa Krim Брют бут.",
+        "productId":  381,
+        "description":  null,
+        "categoryPosId":  18,
+        "categoryName":  "Шампанське",
+        "categoryUrl":  "category18",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/4b0abaef-bb90-4c1f-b480-3ad62622d7f0-image.jpeg",
+        "price":  280,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Latinium",
+        "productId":  357,
+        "description":  null,
+        "categoryPosId":  18,
+        "categoryName":  "Шампанське",
+        "categoryUrl":  "category18",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/f9689409-8ccf-4366-8fc8-36770dc5925a-image.jpeg",
+        "price":  410,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Villa Krim Semisweet бут.",
+        "productId":  409,
+        "description":  null,
+        "categoryPosId":  18,
+        "categoryName":  "Шампанське",
+        "categoryUrl":  "category18",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/653ad446-c2db-45ae-8783-c16465011254-image.jpeg",
+        "price":  260,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Фраголіно ж/б",
+        "productId":  420,
+        "description":  null,
+        "categoryPosId":  18,
+        "categoryName":  "Шампанське",
+        "categoryUrl":  "category18",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/82f179f2-a808-4ce5-9670-f7efa6197888-image.jpeg",
+        "price":  90,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Lambrusco 250мл",
+        "productId":  464,
+        "description":  null,
+        "categoryPosId":  18,
+        "categoryName":  "Шампанське",
+        "categoryUrl":  "category18",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/297d02e8-2065-4fec-ae97-402e5fa62bcd-image.jpeg",
+        "price":  50,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Villa Krim 150мл",
+        "productId":  126,
+        "description":  null,
+        "categoryPosId":  22,
+        "categoryName":  "Вино",
+        "categoryUrl":  "category22",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/eb9111ab-4a98-4532-8758-c1f17bd622eb-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Villa Krim бут.",
+        "productId":  127,
+        "description":  null,
+        "categoryPosId":  22,
+        "categoryName":  "Вино",
+        "categoryUrl":  "category22",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/ad00a5d8-c0a3-44cb-af39-e5648b4de4f8-image.jpeg",
+        "price":  220,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Вино Aliko бут.",
+        "productId":  391,
+        "description":  null,
+        "categoryPosId":  22,
+        "categoryName":  "Вино",
+        "categoryUrl":  "category22",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/4d84c1db-fe0d-4d79-a140-2da61b7849cd-image.jpeg",
+        "price":  180,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Вино на розлів 1л",
+        "productId":  477,
+        "description":  null,
+        "categoryPosId":  22,
+        "categoryName":  "Вино",
+        "categoryUrl":  "category22",
+        "photo":  null,
+        "price":  150,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Jameson 25ml",
+        "productId":  366,
+        "description":  null,
+        "categoryPosId":  24,
+        "categoryName":  "Виски",
+        "categoryUrl":  "category24",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/0c2cabbf-54b5-4b9e-badf-a58e6ba8658b-image.jpeg",
+        "price":  75,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Jameson 50 ml",
+        "productId":  162,
+        "description":  null,
+        "categoryPosId":  24,
+        "categoryName":  "Виски",
+        "categoryUrl":  "category24",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/07ac7d94-9793-4598-ba10-459a8ace06d7-image.jpeg",
+        "price":  150,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Jameson 1л",
+        "productId":  244,
+        "description":  null,
+        "categoryPosId":  24,
+        "categoryName":  "Виски",
+        "categoryUrl":  "category24",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/8ec336e3-0e50-4705-8e7b-7938b8eb158a-image.jpeg",
+        "price":  1950,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Jack Daniel`s 50ml",
+        "productId":  163,
+        "description":  null,
+        "categoryPosId":  24,
+        "categoryName":  "Виски",
+        "categoryUrl":  "category24",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/ee7e597f-a483-42b3-814e-4a800dd3a7b1-image.jpeg",
+        "price":  170,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Jack Daniel`s 0.7л",
+        "productId":  383,
+        "description":  null,
+        "categoryPosId":  24,
+        "categoryName":  "Виски",
+        "categoryUrl":  "category24",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/a33e7501-b24e-4085-b018-3d3c3656f569-image.jpeg",
+        "price":  1700,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Jack Daniel`s 1л",
+        "productId":  208,
+        "description":  null,
+        "categoryPosId":  24,
+        "categoryName":  "Виски",
+        "categoryUrl":  "category24",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/2c46a621-fd41-4707-b003-fb90482b3c78-image.jpeg",
+        "price":  2200,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Red Label 1л",
+        "productId":  458,
+        "description":  null,
+        "categoryPosId":  24,
+        "categoryName":  "Виски",
+        "categoryUrl":  "category24",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/7255c4c1-7a7c-4a37-af3f-24bd47b67f70-image.jpeg",
+        "price":  1600,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Red Label 50ml",
+        "productId":  459,
+        "description":  null,
+        "categoryPosId":  24,
+        "categoryName":  "Виски",
+        "categoryUrl":  "category24",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/6624e84d-ef3c-49e3-a9a2-2cad491b221b-image.jpeg",
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Greenday classik 50мл",
+        "productId":  156,
+        "description":  null,
+        "categoryPosId":  23,
+        "categoryName":  "Горілка",
+        "categoryUrl":  "category23",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/0d89fe43-86a7-4621-8bea-4cbd4aeea7f1-image.jpeg",
+        "price":  40,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Greenday classik 0.5л",
+        "productId":  153,
+        "description":  null,
+        "categoryPosId":  23,
+        "categoryName":  "Горілка",
+        "categoryUrl":  "category23",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/9ceae34f-e1be-40bb-bd45-7c292fef2c56-image.jpeg",
+        "price":  250,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Finlandia 25 мл",
+        "productId":  380,
+        "description":  null,
+        "categoryPosId":  23,
+        "categoryName":  "Горілка",
+        "categoryUrl":  "category23",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/1aeecb97-57fe-4b54-9163-0edcacd0549d-image.jpeg",
+        "price":  35,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Finlandia 50 мл ",
+        "productId":  238,
+        "description":  null,
+        "categoryPosId":  23,
+        "categoryName":  "Горілка",
+        "categoryUrl":  "category23",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/3bdfbace-beb9-45de-9dec-2075f306c9ad-image.jpeg",
+        "price":  70,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Finlandia 0.5 мл ",
+        "productId":  254,
+        "description":  null,
+        "categoryPosId":  23,
+        "categoryName":  "Горілка",
+        "categoryUrl":  "category23",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/3bdff70f-1bf3-4a77-bdf7-7918e29ad0da-image.jpeg",
+        "price":  550,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Finlandia 1л",
+        "productId":  315,
+        "description":  null,
+        "categoryPosId":  23,
+        "categoryName":  "Горілка",
+        "categoryUrl":  "category23",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/22188791-d00c-4849-9363-3ce9cb7c3690-image.jpeg",
+        "price":  980,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Soju 350 мл",
+        "productId":  406,
+        "description":  null,
+        "categoryPosId":  23,
+        "categoryName":  "Горілка",
+        "categoryUrl":  "category23",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/7303e4e2-a3d1-4628-87bb-8baf2ca383e9-image.jpeg",
+        "price":  120,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Greenday classik 0.7л",
+        "productId":  468,
+        "description":  null,
+        "categoryPosId":  23,
+        "categoryName":  "Горілка",
+        "categoryUrl":  "category23",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/b4ea9e1e-b2f3-458c-bc1e-f2ac5f27d418-image.jpeg",
+        "price":  350,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "BLANC розивне 0.3л",
+        "productId":  132,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/7a67ec73-17c1-4eab-96d6-d3329a527cbe-image.jpeg",
+        "price":  80,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "BLANC розливне 0.5л",
+        "productId":  189,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/313ad054-5e08-4632-8b4e-f5da001518a0-image.jpeg",
+        "price":  100,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Львівське 1715 розливне 0.3л",
+        "productId":  136,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/3a31f7b2-93d7-4c99-9703-25b0da13dc66-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Львівське 1715 розливне 0,5л",
+        "productId":  226,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/ecda2cdb-a4e6-4e56-8fa8-326df6274448-image.jpeg",
+        "price":  80,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Львівське 1715 скло 0.5л",
+        "productId":  92,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/4332d9d4-36c6-4bfb-9cf6-f6a401b9d742-image.jpeg",
+        "price":  90,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Львівське \"0\" 0,5л",
+        "productId":  93,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/3c008d33-6c69-4e05-a339-d2ec86cb80be-image.jpeg",
+        "price":  80,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Garage скло 0.4л",
+        "productId":  460,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/ea47c970-b7ff-46b3-95cf-05fa8febb286-image.jpeg",
+        "price":  100,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Dunkel темне розливне 0.5л",
+        "productId":  463,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/b9f13caf-99a4-4c76-af8c-7e1da337e1a4-image.jpeg",
+        "price":  80,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Dunkel темне розливне 0.3л",
+        "productId":  465,
+        "description":  null,
+        "categoryPosId":  16,
+        "categoryName":  "Пиво",
+        "categoryUrl":  "category16",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/ff9f58bd-f0f0-4d51-9885-44e3b7e9f208-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Revo 0.5л",
+        "productId":  371,
+        "description":  null,
+        "categoryPosId":  36,
+        "categoryName":  "Слабоалкогольні напої",
+        "categoryUrl":  "category36",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/9d460c87-ec14-474e-83ea-9b7461a251f2-image.jpeg",
+        "price":  90,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Шейк скло 0.33л",
+        "productId":  370,
+        "description":  null,
+        "categoryPosId":  36,
+        "categoryName":  "Слабоалкогольні напої",
+        "categoryUrl":  "category36",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/708ab87e-038a-46b9-912e-22c971874451-image.jpeg",
+        "price":  60,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Non Stop енергетік",
+        "productId":  467,
+        "description":  null,
+        "categoryPosId":  36,
+        "categoryName":  "Слабоалкогольні напої",
+        "categoryUrl":  "category36",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/b079b0b7-916b-473c-b41e-ac569e8ec41d-image.jpeg",
+        "price":  80,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Чай RIOBA 0,3л",
+        "productId":  181,
+        "description":  null,
+        "categoryPosId":  20,
+        "categoryName":  "Чай",
+        "categoryUrl":  "category20",
+        "photo":  null,
+        "price":  30,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Чай RIOBA 0,5л",
+        "productId":  205,
+        "description":  null,
+        "categoryPosId":  20,
+        "categoryName":  "Чай",
+        "categoryUrl":  "category20",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/27f46c91-ef97-4888-b9f7-1dd5cbcfde4d-image.jpeg",
+        "price":  50,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Чай заварной Rioba 0,7л",
+        "productId":  113,
+        "description":  null,
+        "categoryPosId":  20,
+        "categoryName":  "Чай",
+        "categoryUrl":  "category20",
+        "photo":  null,
+        "price":  70,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Кальян маленький ",
+        "productId":  266,
+        "description":  null,
+        "categoryPosId":  21,
+        "categoryName":  "Послуги",
+        "categoryUrl":  "category21",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/b88187c1-60ec-4716-b416-f590f5b04dfb-image.jpeg",
+        "price":  200,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Кальян великий ",
+        "productId":  285,
+        "description":  null,
+        "categoryPosId":  21,
+        "categoryName":  "Послуги",
+        "categoryUrl":  "category21",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/e4f180c4-7925-4575-9ade-e60380611c34-image.jpeg",
+        "price":  300,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    },
+    {
+        "name":  "Хлібний кошик ",
+        "productId":  73,
+        "description":  null,
+        "categoryPosId":  0,
+        "categoryName":  "Хліб",
+        "categoryUrl":  "category0",
+        "photo":  "https://img.postershop.me/68a433984008ce8009f9be6d/e4071729-f2de-47dd-8d9b-b62ab3553d57-image.jpeg",
+        "price":  100,
+        "parentCategoryId":  null,
+        "parentCategoryName":  null,
+        "parentCategoryUrl":  null,
+        "tags":  [
+
+                 ],
+        "isWeight":  false
+    }
+]
