@@ -299,14 +299,14 @@ a { color: inherit; }
 @media (hover: hover) { .insta:hover span, .foot-link:hover span { border-color: var(--gold); } }
 .wifi {
   display: inline-flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 4px 9px; margin: 16px 0 0;
-  font: 15px/1 var(--display); letter-spacing: .06em; color: var(--ink);
+  font: 16px/1 var(--serif); letter-spacing: .04em; color: var(--ink);
   text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 14px rgba(0,0,0,.8);
 }
 .wifi-ico { flex: none; color: var(--gold); filter: drop-shadow(0 1px 6px rgba(0,0,0,.6)); }
 /* the password copies on tap; the label flips to "Скопійовано" for a moment */
 .wifi-pass {
   all: unset; cursor: pointer; position: relative; padding: 6px 10px; margin: -6px 0; border-radius: 8px;
-  font: 15px/1 var(--display); letter-spacing: .08em; color: var(--ink); font-variant-numeric: lining-nums;
+  font: 16px/1 var(--serif); letter-spacing: .06em; color: var(--price); font-variant-numeric: lining-nums;
   -webkit-tap-highlight-color: transparent;
 }
 .wifi-pass::after {
