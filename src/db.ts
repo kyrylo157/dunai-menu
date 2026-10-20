@@ -32,7 +32,7 @@ export interface Item {
   hidden: number;
 }
 
-export const SETTING_KEYS = ['name', 'tagline', 'hours', 'instagram', 'logo'] as const;
+export const SETTING_KEYS = ['name', 'tagline', 'hours', 'instagram', 'logo', 'background'] as const;
 export type SettingKey = (typeof SETTING_KEYS)[number];
 export type Settings = Partial<Record<SettingKey, string>>;
 
