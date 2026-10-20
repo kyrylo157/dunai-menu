@@ -6,14 +6,8 @@ const h = (s: string | null | undefined) =>
 const SECTIONS: [Section, string][] = [['kitchen', 'Кухня'], ['bar', 'Бар']];
 const BADGE: Record<string, string> = { hit: 'Хіт', new: 'Новинка' };
 
-/** Background choices; `tone` picks frosted (light) or smoked (dark) glass to keep text readable. */
-export const BACKGROUNDS = [
-  { id: 'lilies', name: 'Моне. Лілії', tone: 'light', src: '/bg/lilies.jpg' },
-  { id: 'rhone', name: 'Ван Гог. Зоряна ніч', tone: 'dark', src: '/bg/rhone.jpg' },
-  { id: 'flowers', name: 'Рюйш. Квіти', tone: 'dark', src: '/bg/flowers.jpg' },
-  { id: 'poppies', name: 'Моне. Маки', tone: 'light', src: '/bg/poppies.jpg' },
-  { id: 'lace', name: 'Мереживо', tone: 'light', src: '/bg/lace.svg' },
-] as const;
+/** Rachel Ruysch, "Summer flowers in a vase"; the page uses smoked glass over it. */
+const BACKGROUND = '/bg/flowers.jpg';
 
 function badge(it: Item) {
   return it.badge && BADGE[it.badge] ? `<span class="badge">${BADGE[it.badge]}</span>` : '';
@@ -99,7 +93,16 @@ function categoryBlock(c: Category, list: Item[]) {
 </section>`;
 }
 
-const INSTA_ICON = `<svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>`;
+const INSTA_ICON = `<svg class="insta-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.2" cy="6.8" r=".95" fill="currentColor"/></svg>`;
+
+/** A small faceted crystal: the house ornament (between the tabs, in the footer). */
+const GEM = `<svg class="gem" viewBox="0 0 20 24" width="14" height="17" aria-hidden="true">
+  <path d="M10 1 19 9 10 23 1 9Z" fill="url(#gem-fill)" stroke="currentColor" stroke-width=".9" stroke-linejoin="round"/>
+  <path d="M1 9h18M10 1 6.5 9 10 23 13.5 9Z" fill="none" stroke="currentColor" stroke-width=".6" stroke-linejoin="round" opacity=".75"/>
+</svg>`;
+const GEM_DEFS = `<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="gem-fill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4DC" stop-opacity=".55"/><stop offset=".5" stop-color="#E2C27D" stop-opacity=".18"/><stop offset="1" stop-color="#E2C27D" stop-opacity=".45"/></linearGradient>
+</defs></svg>`;
 
 export function renderMenu(s: Settings, cats: Category[], all: Item[]): string {
   const visible = all.filter((i) => !i.hidden);
@@ -120,11 +123,10 @@ export function renderMenu(s: Settings, cats: Category[], all: Item[]): string {
 
   const name = s.name || 'Dynai';
   const logo = photoUrl(s.logo ?? null);
-  const bg = BACKGROUNDS.find((b) => b.id === s.background) ?? BACKGROUNDS[0];
 
   const tabs = present.length > 1
     ? `<div class="tabs" role="tablist">${present.map(([sec, label], i) =>
-        `<a class="tab" role="tab" href="#${sec}" data-tab="${sec}" aria-selected="${i === 0}">${label}</a>`).join('')}</div>`
+        `<a class="tab" role="tab" href="#${sec}" data-tab="${sec}" aria-selected="${i === 0}">${label}</a>`).join(GEM)}</div>`
     : '';
 
   const chips = present.map(([sec]) =>
@@ -138,18 +140,12 @@ export function renderMenu(s: Settings, cats: Category[], all: Item[]): string {
 </div>`).join('\n');
 
   const handle = s.instagram?.match(/instagram\.com\/([^/?#]+)/)?.[1];
-  const insta = s.instagram
-    ? `<a class="insta" href="${h(s.instagram)}" target="_blank" rel="noopener"><span class="insta-ico btn-glass">${INSTA_ICON}</span><span>${handle ? `@${h(handle)}` : 'Instagram'}</span></a>`
+  const instaLink = (cls: string) => s.instagram
+    ? `<a class="${cls}" href="${h(s.instagram)}" target="_blank" rel="noopener">${INSTA_ICON}<span>${handle ? `@${h(handle)}` : 'Instagram'}</span></a>`
     : '';
 
-  const picker = BACKGROUNDS.map((b) =>
-    `<button type="button" class="bg-opt" data-bg="${b.id}" data-tone-of="${b.tone}" aria-pressed="${b.id === bg.id}">
-  <span class="bg-swatch" style="background-image:url('${b.src}')${b.id === 'lace' ? ';background-color:#B98C93;background-size:60px' : ''}"></span>
-  <span class="bg-name">${b.name}</span>
-</button>`).join('');
-
   return `<!doctype html>
-<html lang="uk" data-bg="${bg.id}" data-tone="${bg.tone}">
+<html lang="uk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -161,12 +157,13 @@ ${logo ? `<meta property="og:image" content="${h(logo)}"><link rel="icon" href="
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prata&family=Tenor+Sans&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script>try{var b=localStorage.getItem('dunai-bg');var o=${JSON.stringify(Object.fromEntries(BACKGROUNDS.map((x) => [x.id, x.tone])))};if(b&&o[b]){document.documentElement.dataset.bg=b;document.documentElement.dataset.tone=o[b];}}catch(e){}</script>
+<link rel="preload" as="image" href="${BACKGROUND}">
 <style>${CSS}</style>
 </head>
 <body>
+${GEM_DEFS}
 <div class="scene" aria-hidden="true">
-  ${BACKGROUNDS.map((b) => `<div class="art" data-art="${b.id}" style="--src:url('${b.src}')"></div>`).join('')}
+  <div class="art" style="--src:url('${BACKGROUND}')"></div>
   <div class="veil"></div>
 </div>
 
@@ -175,7 +172,7 @@ ${logo ? `<meta property="og:image" content="${h(logo)}"><link rel="icon" href="
   <h1 class="visually-hidden">Меню ресторану ${h(name)}</h1>
   ${s.tagline ? `<p class="tagline">${h(s.tagline)}</p>` : ''}
   ${s.hours ? `<p class="hours">${h(s.hours)}</p>` : ''}
-  ${insta}
+  ${instaLink('insta')}
 </header>
 
 <nav class="bar" aria-label="Розділи меню">
@@ -187,20 +184,12 @@ ${logo ? `<meta property="og:image" content="${h(logo)}"><link rel="icon" href="
 ${sections || '<p class="empty glass">Меню оновлюється. Загляньте трохи пізніше.</p>'}
 </main>
 
-<footer class="foot">
-  <p class="foot-note glass">Ціни вказані в гривнях</p>
-</footer>
-
-<div class="bg-picker">
-  <div class="bg-panel glass" id="bg-panel" hidden>
-    <p class="bg-title">Оберіть фон</p>
-    <div class="bg-list">${picker}</div>
-  </div>
-  <button type="button" class="bg-toggle btn-glass" aria-controls="bg-panel" aria-expanded="false">
-    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.6-.8 1.6-1.6 0-.5-.2-.8-.5-1.1-.3-.3-.5-.7-.5-1.1 0-.9.7-1.6 1.6-1.6h1.9A4.9 4.9 0 0 0 21 10.7C21 6.4 17 3 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="7.5" cy="11" r="1.3" fill="currentColor"/><circle cx="10" cy="7.3" r="1.3" fill="currentColor"/><circle cx="14.5" cy="7.3" r="1.3" fill="currentColor"/><circle cx="17" cy="11" r="1.3" fill="currentColor"/></svg>
-    <span>Фон</span>
-  </button>
-</div>
+${s.instagram ? `<footer class="foot">
+  <div class="foot-rule" aria-hidden="true"><span></span>${GEM}<span></span></div>
+  <p class="foot-title">Зазирніть до нас в Instagram</p>
+  <p class="foot-text">Нові страви, святкові вечори та атмосфера ${h(name)}</p>
+  ${instaLink('foot-link')}
+</footer>` : '<footer class="foot"></footer>'}
 
 <dialog class="sheet glass" id="sheet" aria-labelledby="sheet-name">
   <form method="dialog"><button class="sheet-close btn-glass" aria-label="Закрити">
@@ -225,28 +214,7 @@ const CSS = /* css */ `
   --serif: 'Prata', Georgia, serif;
   --sans: 'Jost', system-ui, sans-serif;
   --display: 'Tenor Sans', 'Jost', sans-serif;
-}
-/* frosted glass over bright paintings */
-[data-tone="light"] {
-  --ink: #23191B;
-  --muted: #5F5153;
-  --line: rgba(60, 30, 36, .14);
-  --glass-bg: linear-gradient(145deg, rgba(255,255,255,.66), rgba(255,255,255,.4));
-  --glass-edge: rgba(255,255,255,.75);
-  --glass-shine: rgba(255,255,255,.9);
-  --glass-depth: 0 30px 60px -30px rgba(40, 20, 25, .55), 0 10px 22px -12px rgba(40, 20, 25, .35);
-  --veil: linear-gradient(180deg, rgba(255,250,245,.08), rgba(255,250,245,.22));
-  --price: #7A5A22;
-  --solid-bg: #241B1E;
-  --solid-ink: #FBF6EF;
-  --btn-glass: rgba(255,255,255,.42);
-  --gold: #8A6628;
-  --strip: rgba(255,252,248,.5);
-  --lift: 0 1px 12px rgba(255,255,255,.75);
-  color-scheme: light;
-}
-/* smoked glass over dark paintings */
-[data-tone="dark"] {
+  /* smoked glass over the dark painting */
   --ink: #F6EFE6;
   --muted: #CABFB4;
   --line: rgba(255, 240, 225, .14);
@@ -276,16 +244,9 @@ a { color: inherit; }
 /* ---------- painting ---------- */
 .scene { position: fixed; inset: 0; z-index: -1; overflow: hidden; }
 .art {
-  position: absolute; inset: -4%; opacity: 0; transition: opacity .8s ease;
-  background: var(--src) center / cover no-repeat;
+  position: absolute; inset: -4%;
+  background: var(--src) 45% 40% / cover no-repeat;
   animation: breathe 40s ease-in-out infinite alternate; will-change: transform;
-}
-[data-bg="lilies"] [data-art="lilies"], [data-bg="rhone"] [data-art="rhone"], [data-bg="flowers"] [data-art="flowers"],
-[data-bg="poppies"] [data-art="poppies"], [data-bg="lace"] [data-art="lace"] { opacity: 1; }
-[data-art="flowers"] { background-position: 45% 40%; }
-[data-art="lace"] {
-  background: var(--src) center / 220px repeat, radial-gradient(120% 80% at 30% 10%, #E2BFC2, #B98C93 55%, #8E5F68);
-  animation: none;
 }
 @keyframes breathe { from { transform: scale(1) translate(0, 0); } to { transform: scale(1.08) translate(-1.5%, -1%); } }
 .veil { position: absolute; inset: 0; background: var(--veil); }
@@ -303,7 +264,7 @@ a { color: inherit; }
   content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none;
   background: linear-gradient(125deg, rgba(255,255,255,.35) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0) 70%, rgba(255,255,255,.12) 100%);
 }
-[data-tone="dark"] .glass::before { opacity: .45; }
+.glass::before { opacity: .45; }
 
 /* buttons: clear glass by default, a solid ink pill for the selected/primary one */
 .btn-glass {
@@ -316,18 +277,24 @@ a { color: inherit; }
   min-height: min(60svh, 560px); display: flex; flex-direction: column; align-items: center; justify-content: center;
   padding: 48px 20px 40px; text-align: center; text-shadow: var(--lift);
 }
-.logo { width: 172px; height: 172px; border-radius: 50%; mix-blend-mode: multiply; margin-bottom: 24px; animation: appear 1.2s ease both; }
-[data-tone="dark"] .logo { filter: invert(1) drop-shadow(0 8px 30px rgba(0,0,0,.5)); mix-blend-mode: screen; }
+.logo {
+  width: 172px; height: 172px; border-radius: 50%; margin-bottom: 24px; animation: appear 1.2s ease both;
+  filter: invert(1) drop-shadow(0 8px 30px rgba(0,0,0,.5)); mix-blend-mode: screen;
+}
 @keyframes appear { from { opacity: 0; transform: scale(.96); } }
 .logo-text { font: 56px/1 var(--display); margin-bottom: 20px; }
 .tagline { margin: 0; font: 19px/1.35 var(--display); letter-spacing: .06em; }
 .hours { margin: 6px 0 0; font-size: 14.5px; font-weight: 400; letter-spacing: .08em; opacity: .85; }
-.insta {
-  display: inline-flex; align-items: center; gap: 12px; margin-top: 26px; text-decoration: none;
-  font: 400 14.5px var(--sans); letter-spacing: .05em;
+/* instagram: a plain line glyph and the handle on a gold hairline, no button */
+.insta, .foot-link {
+  display: inline-flex; align-items: center; gap: 9px; text-decoration: none;
+  font: 15px/1 var(--display); letter-spacing: .06em;
 }
-.insta-ico { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; text-shadow: none; transition: transform .15s ease; }
-.insta:active .insta-ico { transform: scale(.94); }
+.insta { margin-top: 24px; color: var(--muted); }
+.insta-ico { flex: none; color: var(--gold); filter: drop-shadow(0 1px 6px rgba(0,0,0,.6)); }
+.insta span, .foot-link span { padding-bottom: 5px; border-bottom: 1px solid color-mix(in srgb, var(--gold) 55%, transparent); transition: border-color .2s ease; }
+.insta:active span, .foot-link:active span { border-color: var(--gold); }
+@media (hover: hover) { .insta:hover span, .foot-link:hover span { border-color: var(--gold); } }
 
 /* ---------- sticky nav: a frosted strip with text links ---------- */
 .bar {
@@ -336,7 +303,9 @@ a { color: inherit; }
   backdrop-filter: blur(22px) saturate(1.6); -webkit-backdrop-filter: blur(22px) saturate(1.6);
   box-shadow: 0 12px 30px -20px rgba(0,0,0,.6);
 }
-.tabs { display: flex; justify-content: center; gap: 44px; padding: 14px 16px 0; }
+.tabs { display: flex; justify-content: center; align-items: center; gap: 30px; padding: 14px 16px 0; }
+.gem { flex: none; color: var(--gold); filter: drop-shadow(0 0 6px color-mix(in srgb, var(--gold) 45%, transparent)); }
+.tabs .gem { margin-bottom: 9px; }
 .tab {
   position: relative; text-decoration: none; padding: 2px 2px 10px;
   font: 18px/1.2 var(--display); letter-spacing: .08em; color: var(--muted); transition: color .25s ease;
@@ -422,25 +391,19 @@ li:last-child > .row { border-bottom: 0; }
   padding: 3px 10px; border-radius: 999px; color: var(--solid-ink); background: var(--solid-bg);
 }
 
-.foot { display: flex; justify-content: center; padding: 18px 16px calc(96px + env(safe-area-inset-bottom)); }
-.foot-note { margin: 0; padding: 10px 18px; border-radius: 999px; font-size: 13.5px; color: var(--muted); }
-.empty { text-align: center; padding: 40px 16px; border-radius: 30px; }
-
-/* ---------- background picker ---------- */
-.bg-picker { position: fixed; right: 14px; bottom: calc(14px + env(safe-area-inset-bottom)); z-index: 20; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
-.bg-toggle { display: inline-flex; align-items: center; gap: 8px; padding: 11px 17px; border-radius: 999px; cursor: pointer; font-weight: 500; font-size: 14px; letter-spacing: .04em; }
-.bg-panel { width: min(330px, calc(100vw - 28px)); border-radius: 24px; padding: 14px; }
-.bg-panel[hidden] { display: none; }
-.bg-title { margin: 0 4px 10px; font-weight: 600; font-size: 14px; }
-.bg-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
-.bg-opt { all: unset; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
-.bg-swatch {
-  width: 52px; height: 52px; border-radius: 50%; background-size: cover; background-position: center;
-  box-shadow: 0 0 0 2px rgba(255,255,255,.7), 0 8px 14px -6px rgba(0,0,0,.6);
-  transition: transform .2s ease, box-shadow .2s ease;
+/* footer: an invitation to Instagram set straight on the painting */
+.foot {
+  display: flex; flex-direction: column; align-items: center; text-align: center; text-shadow: var(--lift);
+  padding: 44px 24px calc(56px + env(safe-area-inset-bottom));
+  background: radial-gradient(60% 55% at 50% 52%, rgba(12,9,11,.62), rgba(12,9,11,0));
 }
-.bg-opt[aria-pressed="true"] .bg-swatch { transform: scale(1.08); box-shadow: 0 0 0 3px var(--solid-bg), 0 0 0 5px rgba(255,255,255,.8), 0 10px 18px -6px rgba(0,0,0,.6); }
-.bg-name { font-size: 10.5px; line-height: 1.2; color: var(--ink); }
+.foot-rule { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+.foot-rule span { width: 64px; height: 1px; background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold) 70%, transparent)); }
+.foot-rule span:last-child { transform: scaleX(-1); }
+.foot-title { margin: 0; max-width: 18ch; font: 27px/1.2 var(--serif); text-wrap: balance; }
+.foot-text { margin: 10px 0 22px; max-width: 30ch; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.foot-link { color: var(--ink); font-size: 16px; }
+.empty { text-align: center; padding: 40px 16px; border-radius: 30px; }
 
 /* ---------- detail sheet ---------- */
 .sheet {
@@ -463,7 +426,7 @@ li:last-child > .row { border-bottom: 0; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .art, .logo, .sheet[open] { animation: none; }
-  .tab::after, .art { transition: none; }
+  .tab::after { transition: none; }
 }
 `;
 
@@ -536,26 +499,6 @@ const JS = /* js */ `
     if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
   }, { passive: true });
   onScroll();
-
-  // background picker (remembered on this phone)
-  var toggle = document.querySelector('.bg-toggle');
-  var panel = document.getElementById('bg-panel');
-  var opts = [].slice.call(document.querySelectorAll('.bg-opt'));
-  function setBg(id, tone) {
-    root.dataset.bg = id;
-    root.dataset.tone = tone;
-    opts.forEach(function (o) { o.setAttribute('aria-pressed', String(o.dataset.bg === id)); });
-    try { localStorage.setItem('dunai-bg', id); } catch (e) {}
-  }
-  opts.forEach(function (o) {
-    if (o.dataset.bg === root.dataset.bg) setBg(o.dataset.bg, o.dataset.toneOf);
-    o.addEventListener('click', function () { setBg(o.dataset.bg, o.dataset.toneOf); });
-  });
-  toggle.addEventListener('click', function () {
-    var open = panel.hidden;
-    panel.hidden = !open;
-    toggle.setAttribute('aria-expanded', String(open));
-  });
 
   // item detail sheet
   var sheet = document.getElementById('sheet');

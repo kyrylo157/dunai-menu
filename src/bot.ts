@@ -45,7 +45,6 @@ const SETTING_LABEL: Record<SettingKey, string> = {
   hours: 'Години роботи',
   instagram: 'Посилання на Instagram',
   logo: 'Логотип',
-  background: 'Фон сайту',
 };
 
 const cancelKb: Keyboard = [[{ text: '✖ Скасувати', callback_data: 'x' }]];

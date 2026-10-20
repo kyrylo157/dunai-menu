@@ -61,6 +61,16 @@ export default {
         return Response.json({ webhook: res, url: `${url.origin}/tg/…` });
       }
       if (path === '/admin/import-photos') return Response.json(await importPhotos(env));
+      // replace one dish photo (used by scripts/restyle-photos.mjs); the old blob is kept so it can be restored
+      if (path === '/admin/photo' && req.method === 'POST') {
+        const id = Number(url.searchParams.get('item'));
+        const it = await db.item(env.DB, id);
+        if (!it) return new Response('No such item', { status: 404 });
+        const key = await db.putPhoto(env.DB, await req.arrayBuffer(), req.headers.get('content-type') ?? 'image/jpeg');
+        if (!key) return new Response('Too large', { status: 413 });
+        await db.updateItem(env.DB, id, 'photo', key);
+        return Response.json({ key, previous: it.photo });
+      }
     }
 
     return new Response('Not found', { status: 404 });
