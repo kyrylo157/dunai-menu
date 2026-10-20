@@ -167,7 +167,7 @@ async function categoryView(ctx: Ctx, cid: number, page = 0): Promise<View | nul
   ]);
   kb.push([
     { text: c.section === 'kitchen' ? '🔁 Перенести в Бар' : '🔁 Перенести в Кухню', callback_data: `catsec:${cid}` },
-    { text: c.layout === 'cards' ? '🖼 Вигляд: картки' : '📃 Вигляд: список', callback_data: `catlay:${cid}` },
+    { text: c.layout === 'cards' ? '🖼 Вигляд: картки' : '📃 Вигляд: список без фото', callback_data: `catlay:${cid}` },
   ]);
   kb.push([
     { text: c.hidden ? '👁 Показати на сайті' : '🙈 Сховати з сайту', callback_data: `cathide:${cid}` },
@@ -376,7 +376,7 @@ async function onCallback(ctx: Ctx, data: string, msg?: TgMessage): Promise<stri
       if (!c) return;
       await db.updateCategory(env.DB, id, 'layout', c.layout === 'cards' ? 'list' : 'cards');
       await show(ctx, (await categoryView(ctx, id))!, msg);
-      return c.layout === 'cards' ? 'Тепер списком' : 'Тепер картками з фото';
+      return c.layout === 'cards' ? 'Тепер списком, без фото' : 'Тепер картками з фото';
     }
     case 'cathide': {
       const c = await db.category(env.DB, id);

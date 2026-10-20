@@ -27,15 +27,11 @@ function card(it: Item) {
 </button></li>`;
 }
 
-function row(it: Item, withThumb: boolean) {
-  const src = photoUrl(it.photo);
+function row(it: Item) {
   const tappable = !!(it.photo || it.description);
   const open = tappable ? 'button type="button"' : 'div';
   const close = tappable ? 'button' : 'div';
-  const thumb = withThumb
-    ? `<span class="thumb">${src ? `<img src="${h(src)}" alt="" loading="lazy" decoding="async" width="56" height="56">` : ''}</span>`
-    : '';
-  return `<li><${open} class="row"${tapAttrs(it)}>${thumb}
+  return `<li><${open} class="row"${tapAttrs(it)}>
   <span class="row-main">
     <span class="row-line"><span class="row-name">${h(it.name)}${badge(it)}</span><span class="leader" aria-hidden="true"></span><span class="price">${priceText(it.price)}</span></span>
     ${it.weight || it.description ? `<span class="row-sub">${[it.weight, it.description].filter(Boolean).map(h).join(' · ')}</span>` : ''}
@@ -82,10 +78,10 @@ function categoryBlock(c: Category, list: Item[]) {
     const withPhoto = list.filter((i) => i.photo);
     const without = list.filter((i) => !i.photo);
     body = (withPhoto.length ? `<ul class="cards">${withPhoto.map(card).join('')}</ul>` : '')
-      + (without.length ? `<ul class="rows">${without.map((i) => row(i, false)).join('')}</ul>` : '');
+      + (without.length ? `<ul class="rows">${without.map(row).join('')}</ul>` : '');
   } else {
-    const thumbs = list.some((i) => i.photo);
-    body = `<ul class="rows">${list.map((i) => row(i, thumbs)).join('')}</ul>`;
+    // "list" is text only: photos stay in the database but are not shown
+    body = `<ul class="rows">${list.map(row).join('')}</ul>`;
   }
   return `<section class="cat glass" id="c${c.id}" aria-labelledby="c${c.id}-t">
   <h2 class="cat-title" id="c${c.id}-t">${h(c.name)}</h2>
@@ -105,7 +101,8 @@ const GEM_DEFS = `<svg width="0" height="0" style="position:absolute" aria-hidde
 </defs></svg>`;
 
 export function renderMenu(s: Settings, cats: Category[], all: Item[]): string {
-  const visible = all.filter((i) => !i.hidden);
+  const textOnly = new Set(cats.filter((c) => c.section === 'bar' || c.layout !== 'cards').map((c) => c.id));
+  const visible = all.filter((i) => !i.hidden).map((i) => (textOnly.has(i.category_id) ? { ...i, photo: null } : i));
   const byCat = new Map<number, Item[]>();
   for (const it of visible) {
     if (!byCat.has(it.category_id)) byCat.set(it.category_id, []);
@@ -366,9 +363,6 @@ main { max-width: 780px; margin: 0 auto; padding: 4px 12px 24px; }
 .row { all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 12px; width: 100%; padding: 11px 4px; border-bottom: 1px solid var(--line); -webkit-tap-highlight-color: transparent; }
 button.row { cursor: pointer; }
 li:last-child > .row { border-bottom: 0; }
-.thumb { flex: none; width: 52px; height: 52px; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 16px -8px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.5) inset; background: rgba(255,255,255,.5); }
-.thumb img { width: 100%; height: 100%; object-fit: cover; }
-.thumb:empty { background: transparent; box-shadow: none; }
 .row-main { flex: 1; min-width: 0; }
 .row-line { display: flex; align-items: baseline; gap: 6px; }
 .row-name { font-weight: 500; font-size: 16px; }
