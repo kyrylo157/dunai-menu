@@ -123,7 +123,7 @@ export function renderMenu(s: Settings, cats: Category[], all: Item[]): string {
   const bg = BACKGROUNDS.find((b) => b.id === s.background) ?? BACKGROUNDS[0];
 
   const tabs = present.length > 1
-    ? `<div class="tabs glass" role="tablist"><span class="tab-thumb solid" aria-hidden="true"></span>${present.map(([sec, label], i) =>
+    ? `<div class="tabs" role="tablist">${present.map(([sec, label], i) =>
         `<a class="tab" role="tab" href="#${sec}" data-tab="${sec}" aria-selected="${i === 0}">${label}</a>`).join('')}</div>`
     : '';
 
@@ -137,8 +137,9 @@ export function renderMenu(s: Settings, cats: Category[], all: Item[]): string {
   ${shown.filter((c) => c.section === sec).map((c) => categoryBlock(c, byCat.get(c.id)!)).join('\n')}
 </div>`).join('\n');
 
+  const handle = s.instagram?.match(/instagram\.com\/([^/?#]+)/)?.[1];
   const insta = s.instagram
-    ? `<a class="btn solid" href="${h(s.instagram)}" target="_blank" rel="noopener">${INSTA_ICON}<span>Ми в Instagram</span></a>`
+    ? `<a class="insta" href="${h(s.instagram)}" target="_blank" rel="noopener"><span class="insta-ico btn-glass">${INSTA_ICON}</span><span>${handle ? `@${h(handle)}` : 'Instagram'}</span></a>`
     : '';
 
   const picker = BACKGROUNDS.map((b) =>
@@ -159,7 +160,7 @@ export function renderMenu(s: Settings, cats: Category[], all: Item[]): string {
 ${logo ? `<meta property="og:image" content="${h(logo)}"><link rel="icon" href="${h(logo)}">` : ''}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prata&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Tenor+Sans&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script>try{var b=localStorage.getItem('dunai-bg');var o=${JSON.stringify(Object.fromEntries(BACKGROUNDS.map((x) => [x.id, x.tone])))};if(b&&o[b]){document.documentElement.dataset.bg=b;document.documentElement.dataset.tone=o[b];}}catch(e){}</script>
 <style>${CSS}</style>
 </head>
@@ -170,15 +171,11 @@ ${logo ? `<meta property="og:image" content="${h(logo)}"><link rel="icon" href="
 </div>
 
 <header class="hero">
-  <div class="medallion glass">
-    ${logo ? `<img class="logo" src="${h(logo)}" alt="${h(name)} family restaurant" width="200" height="200">` : `<span class="logo-text">${h(name)}</span>`}
-  </div>
-  <div class="hero-card glass">
-    <h1 class="visually-hidden">Меню ресторану ${h(name)}</h1>
-    ${s.tagline ? `<p class="tagline">${h(s.tagline)}</p>` : ''}
-    ${s.hours ? `<p class="hours">${h(s.hours)}</p>` : ''}
-    ${insta}
-  </div>
+  ${logo ? `<img class="logo" src="${h(logo)}" alt="${h(name)} family restaurant" width="200" height="200">` : `<span class="logo-text">${h(name)}</span>`}
+  <h1 class="visually-hidden">Меню ресторану ${h(name)}</h1>
+  ${s.tagline ? `<p class="tagline">${h(s.tagline)}</p>` : ''}
+  ${s.hours ? `<p class="hours">${h(s.hours)}</p>` : ''}
+  ${insta}
 </header>
 
 <nav class="bar" aria-label="Розділи меню">
@@ -227,7 +224,7 @@ const CSS = /* css */ `
 :root {
   --serif: 'Prata', Georgia, serif;
   --sans: 'Jost', system-ui, sans-serif;
-  --accent-hi: #B38B4D;
+  --display: 'Tenor Sans', 'Jost', sans-serif;
 }
 /* frosted glass over bright paintings */
 [data-tone="light"] {
@@ -243,6 +240,9 @@ const CSS = /* css */ `
   --solid-bg: #241B1E;
   --solid-ink: #FBF6EF;
   --btn-glass: rgba(255,255,255,.42);
+  --gold: #8A6628;
+  --strip: rgba(255,252,248,.5);
+  --lift: 0 1px 12px rgba(255,255,255,.75);
   color-scheme: light;
 }
 /* smoked glass over dark paintings */
@@ -259,6 +259,9 @@ const CSS = /* css */ `
   --solid-bg: #F6EFE6;
   --solid-ink: #1E1719;
   --btn-glass: rgba(255,255,255,.12);
+  --gold: #E2C27D;
+  --strip: rgba(18,14,16,.45);
+  --lift: 0 2px 16px rgba(0,0,0,.7);
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -267,7 +270,7 @@ body { margin: 0; color: var(--ink); font: 400 16px/1.45 var(--sans); -webkit-fo
 img { display: block; max-width: 100%; }
 button { font: inherit; color: inherit; }
 a { color: inherit; }
-:focus-visible { outline: 2px solid var(--accent-hi); outline-offset: 3px; border-radius: 12px; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 12px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ---------- painting ---------- */
@@ -279,7 +282,7 @@ a { color: inherit; }
 }
 [data-bg="lilies"] [data-art="lilies"], [data-bg="rhone"] [data-art="rhone"], [data-bg="flowers"] [data-art="flowers"],
 [data-bg="poppies"] [data-art="poppies"], [data-bg="lace"] [data-art="lace"] { opacity: 1; }
-[data-art="flowers"] { background-position: 40% 35%; }
+[data-art="flowers"] { background-position: 45% 40%; }
 [data-art="lace"] {
   background: var(--src) center / 220px repeat, radial-gradient(120% 80% at 30% 10%, #E2BFC2, #B98C93 55%, #8E5F68);
   animation: none;
@@ -308,61 +311,54 @@ a { color: inherit; }
   box-shadow: 0 1px 0 var(--glass-shine) inset, 0 8px 20px -12px rgba(0,0,0,.5);
   backdrop-filter: blur(16px) saturate(1.8); -webkit-backdrop-filter: blur(16px) saturate(1.8);
 }
-.solid {
-  color: var(--solid-ink); background: var(--solid-bg); border: 1px solid transparent;
-  box-shadow: 0 1px 0 rgba(255,255,255,.14) inset, 0 12px 24px -12px rgba(0,0,0,.6);
+/* ---------- hero: the logo straight on the painting, no boxes ---------- */
+.hero {
+  min-height: min(60svh, 560px); display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 48px 20px 40px; text-align: center; text-shadow: var(--lift);
 }
-.btn {
-  display: inline-flex; align-items: center; gap: 10px; padding: 13px 26px; border-radius: 999px;
-  text-decoration: none; font-weight: 500; font-size: 15px; letter-spacing: .04em; transition: transform .15s ease, opacity .15s ease;
+.logo { width: 172px; height: 172px; border-radius: 50%; mix-blend-mode: multiply; margin-bottom: 24px; animation: appear 1.2s ease both; }
+[data-tone="dark"] .logo { filter: invert(1) drop-shadow(0 8px 30px rgba(0,0,0,.5)); mix-blend-mode: screen; }
+@keyframes appear { from { opacity: 0; transform: scale(.96); } }
+.logo-text { font: 56px/1 var(--display); margin-bottom: 20px; }
+.tagline { margin: 0; font: 19px/1.35 var(--display); letter-spacing: .06em; }
+.hours { margin: 6px 0 0; font-size: 14.5px; font-weight: 400; letter-spacing: .08em; opacity: .85; }
+.insta {
+  display: inline-flex; align-items: center; gap: 12px; margin-top: 26px; text-decoration: none;
+  font: 400 14.5px var(--sans); letter-spacing: .05em;
 }
-.btn:active { transform: scale(.97); opacity: .9; }
+.insta-ico { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; text-shadow: none; transition: transform .15s ease; }
+.insta:active .insta-ico { transform: scale(.94); }
 
-/* ---------- hero ---------- */
-.hero { display: flex; flex-direction: column; align-items: center; padding: 40px 16px 22px; text-align: center; }
-.medallion {
-  width: 180px; height: 180px; border-radius: 50%; padding: 12px; margin-bottom: -40px; z-index: 1;
-  animation: float 6s ease-in-out infinite alternate;
+/* ---------- sticky nav: a frosted strip with text links ---------- */
+.bar {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--strip); border-block: 1px solid var(--glass-edge);
+  backdrop-filter: blur(22px) saturate(1.6); -webkit-backdrop-filter: blur(22px) saturate(1.6);
+  box-shadow: 0 12px 30px -20px rgba(0,0,0,.6);
 }
-@keyframes float { from { transform: translateY(0); } to { transform: translateY(-6px); } }
-.logo { width: 100%; height: 100%; border-radius: 50%; mix-blend-mode: multiply; }
-[data-tone="dark"] .logo { filter: invert(1); mix-blend-mode: screen; }
-.logo-text { display: grid; place-items: center; height: 100%; font: 48px/1 var(--serif); }
-.hero-card { width: min(420px, 100%); border-radius: 28px; padding: 58px 20px 26px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-.tagline { margin: 0; font: 23px/1.25 var(--serif); }
-.hours { margin: 0 0 18px; color: var(--muted); font-size: 15px; letter-spacing: .03em; }
-
-/* ---------- sticky nav ---------- */
-.bar { position: sticky; top: 0; z-index: 5; padding: 10px 0 0; }
-.bar::before {
-  content: ''; position: absolute; inset: 0 0 -8px; z-index: -1; opacity: 0; transition: opacity .25s ease;
-  background: linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,0));
-  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-  mask-image: linear-gradient(180deg, #000 80%, transparent); -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent);
-}
-.bar.stuck::before { opacity: 1; }
-.tabs { display: grid; grid-template-columns: 1fr 1fr; width: min(300px, calc(100% - 32px)); margin: 0 auto; padding: 4px; border-radius: 999px; }
+.tabs { display: flex; justify-content: center; gap: 44px; padding: 14px 16px 0; }
 .tab {
-  position: relative; z-index: 1; text-align: center; text-decoration: none; padding: 9px 0;
-  font-weight: 500; font-size: 15.5px; letter-spacing: .05em; color: var(--muted); transition: color .25s ease;
+  position: relative; text-decoration: none; padding: 2px 2px 10px;
+  font: 18px/1.2 var(--display); letter-spacing: .08em; color: var(--muted); transition: color .25s ease;
 }
-.tab[aria-selected="true"] { color: var(--solid-ink); }
-.tab-thumb {
-  position: absolute; z-index: 0; top: 4px; bottom: 4px; left: 4px; width: calc(50% - 4px); border-radius: 999px;
-  transition: transform .4s cubic-bezier(.3,1.2,.5,1);
+.tab::after {
+  content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 1px; background: var(--gold);
+  transition: width .35s ease, left .35s ease;
 }
-.tabs[data-active="1"] .tab-thumb { transform: translateX(100%); }
-.chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 16px 14px; scrollbar-width: none; scroll-padding-inline: 16px; }
+.tab[aria-selected="true"] { color: var(--ink); }
+.tab[aria-selected="true"]::after { left: 0; width: 100%; }
+.chips { display: flex; gap: 24px; overflow-x: auto; padding: 10px 20px 13px; scrollbar-width: none; scroll-padding-inline: 20px; }
 .chips::-webkit-scrollbar { display: none; }
 .chip {
-  flex: none; text-decoration: none; white-space: nowrap; font-size: 14.5px; font-weight: 400; letter-spacing: .03em;
-  padding: 8px 16px; border-radius: 999px; color: var(--ink);
-  background: var(--btn-glass); border: 1px solid var(--glass-edge);
-  box-shadow: 0 1px 0 var(--glass-shine) inset;
-  backdrop-filter: blur(12px) saturate(1.6); -webkit-backdrop-filter: blur(12px) saturate(1.6);
-  transition: background .2s ease, color .2s ease;
+  flex: none; position: relative; text-decoration: none; white-space: nowrap; padding: 4px 0 7px;
+  font-size: 14.5px; font-weight: 400; letter-spacing: .04em; color: var(--muted); transition: color .2s ease;
 }
-.chip.on { color: var(--solid-ink); background: var(--solid-bg); border-color: transparent; box-shadow: 0 8px 18px -10px rgba(0,0,0,.6); }
+.chip::after {
+  content: ''; position: absolute; left: 50%; bottom: 0; width: 4px; height: 4px; translate: -50% 0; rotate: 45deg;
+  background: var(--gold); opacity: 0; transition: opacity .2s ease;
+}
+.chip.on { color: var(--ink); }
+.chip.on::after { opacity: 1; }
 .js [data-chips]:not(.on), .js .section:not(.on) { display: none; }
 
 /* ---------- content ---------- */
@@ -466,8 +462,8 @@ li:last-child > .row { border-bottom: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .art, .medallion, .sheet[open] { animation: none; }
-  .tab-thumb, .art { transition: none; }
+  .art, .logo, .sheet[open] { animation: none; }
+  .tab::after, .art { transition: none; }
 }
 `;
 
@@ -525,7 +521,6 @@ const JS = /* js */ `
   var ticking = false;
   function onScroll() {
     ticking = false;
-    bar.classList.toggle('stuck', window.scrollY >= hero.offsetHeight - 1);
     var line = bar.offsetHeight + 24;
     var active = null;
     document.querySelectorAll('.section.on .cat').forEach(function (c) {
