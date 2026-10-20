@@ -403,9 +403,11 @@ li:last-child > .row { border-bottom: 0; }
 .sheet {
   position: fixed; width: min(560px, 100%); max-width: 100%; max-height: 92dvh; margin: auto auto 0; padding: 0; color: var(--ink);
   border-bottom: 0; border-radius: 30px 30px 0 0; overflow: auto;
+  /* solid enough on its own: Safari may skip the blur behind a dialog */
+  background: linear-gradient(160deg, rgba(38,32,36,.96), rgba(22,18,22,.97));
 }
 @media (min-width: 640px) { .sheet { margin: auto; border-radius: 30px; border-bottom: 1px solid var(--glass-edge); } }
-.sheet::backdrop { background: rgba(20, 10, 14, .35); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.sheet::backdrop { background: rgba(14, 8, 11, .6); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
 .sheet[open] { animation: up .35s cubic-bezier(.2,.9,.25,1); }
 @keyframes up { from { transform: translateY(60px); opacity: 0; } }
 .sheet-close { position: absolute; right: 14px; top: 14px; z-index: 2; width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; }
