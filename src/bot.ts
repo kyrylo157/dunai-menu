@@ -45,6 +45,8 @@ const SETTING_LABEL: Record<SettingKey, string> = {
   hours: 'Години роботи',
   instagram: 'Посилання на Instagram',
   logo: 'Логотип',
+  wifi_name: 'Назва мережі Wi-Fi',
+  wifi_password: 'Пароль Wi-Fi',
 };
 
 const cancelKb: Keyboard = [[{ text: '✖ Скасувати', callback_data: 'x' }]];
@@ -257,6 +259,7 @@ async function settingsView(ctx: Ctx): Promise<View> {
       `<b>Години:</b> ${esc(s.hours)}`,
       `<b>Instagram:</b> ${esc(s.instagram)}`,
       `<b>Логотип:</b> ${s.logo ? 'є' : 'немає'}`,
+      `<b>Wi-Fi:</b> ${s.wifi_name ? `${esc(s.wifi_name)}, пароль ${esc(s.wifi_password ?? '—')}` : 'не показується'}`,
       '',
       `Доступ до бота мають: ${admins}`,
     ].join('\n'),
@@ -264,6 +267,7 @@ async function settingsView(ctx: Ctx): Promise<View> {
       [{ text: '✏️ Назва', callback_data: 'set:name' }, { text: '✏️ Підпис', callback_data: 'set:tagline' }],
       [{ text: '🕙 Години', callback_data: 'set:hours' }, { text: '📸 Instagram', callback_data: 'set:instagram' }],
       [{ text: '🖼 Логотип', callback_data: 'set:logo' }],
+      [{ text: '📶 Мережа Wi-Fi', callback_data: 'set:wifi_name' }, { text: '🔑 Пароль Wi-Fi', callback_data: 'set:wifi_password' }],
       [{ text: '👥 Хто має доступ', callback_data: 'admins' }],
       [{ text: '🌐 Відкрити сайт', url: ctx.origin }],
     ],
@@ -465,7 +469,8 @@ async function onCallback(ctx: Ctx, data: string, msg?: TgMessage): Promise<stri
     case 'set': {
       const key = a as SettingKey;
       await setSession(env, ctx.chatId, { await: 'setting', key });
-      const hint = key === 'logo' ? 'Надішліть зображення логотипу.' : `Надішліть нове значення: ${SETTING_LABEL[key].toLowerCase()}.`;
+      let hint = key === 'logo' ? 'Надішліть зображення логотипу.' : `Надішліть нове значення: ${SETTING_LABEL[key].toLowerCase()}.`;
+      if (key === 'wifi_name') hint += '\nЩоб прибрати Wi-Fi з сайту, надішліть «-».';
       await send(ctx, hint, { inline_keyboard: cancelKb });
       return;
     }
@@ -585,9 +590,9 @@ async function onInput(ctx: Ctx, msg: TgMessage, s: Session): Promise<void> {
         await dropPhoto(env, (await db.settings(env.DB)).logo ?? null);
       } else {
         if (!text) { await send(ctx, 'Надішліть текст.', { inline_keyboard: cancelKb }); return; }
-        value = text;
-        if (s.key === 'instagram' && !/^https?:\/\//.test(value)) {
-          value = `https://www.instagram.com/${value.replace(/^@/, '')}/`;
+        value = text === '-' && s.key.startsWith('wifi_') ? null : text;
+        if (s.key === 'instagram' && !/^https?:\/\//.test(text)) {
+          value = `https://www.instagram.com/${text.replace(/^@/, '')}/`;
         }
       }
       await db.setSetting(env.DB, s.key, value);

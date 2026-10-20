@@ -91,6 +91,8 @@ function categoryBlock(c: Category, list: Item[]) {
 
 const INSTA_ICON = `<svg class="insta-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.2" cy="6.8" r=".95" fill="currentColor"/></svg>`;
 
+const WIFI_ICON = `<svg class="wifi-ico" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M2.5 9a14 14 0 0 1 19 0M5.8 12.6a9 9 0 0 1 12.4 0M9.1 16.1a4.3 4.3 0 0 1 5.8 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="12" cy="19.3" r="1.2" fill="currentColor"/></svg>`;
+
 /** A small faceted crystal: the house ornament (between the tabs, in the footer). */
 const GEM = `<svg class="gem" viewBox="0 0 20 24" width="14" height="17" aria-hidden="true">
   <path d="M10 1 19 9 10 23 1 9Z" fill="url(#gem-fill)" stroke="currentColor" stroke-width=".9" stroke-linejoin="round"/>
@@ -170,6 +172,9 @@ ${GEM_DEFS}
   ${s.tagline ? `<p class="tagline">${h(s.tagline)}</p>` : ''}
   ${s.hours ? `<p class="hours">${h(s.hours)}</p>` : ''}
   ${instaLink('insta')}
+  ${s.wifi_name ? `<p class="wifi">${WIFI_ICON}<span>Wi-Fi ${h(s.wifi_name)}</span>${s.wifi_password
+    ? `<button type="button" class="wifi-pass" data-copy="${h(s.wifi_password)}" aria-label="Скопіювати пароль Wi-Fi">${h(s.wifi_password)}</button>`
+    : ''}</p>` : ''}
 </header>
 
 <nav class="bar" aria-label="Розділи меню">
@@ -287,11 +292,28 @@ a { color: inherit; }
   display: inline-flex; align-items: center; gap: 9px; text-decoration: none;
   font: 15px/1 var(--display); letter-spacing: .06em;
 }
-.insta { margin-top: 24px; color: var(--muted); }
+.insta { margin-top: 24px; color: var(--ink); text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 14px rgba(0,0,0,.8); }
 .insta-ico { flex: none; color: var(--gold); filter: drop-shadow(0 1px 6px rgba(0,0,0,.6)); }
 .insta span, .foot-link span { padding-bottom: 5px; border-bottom: 1px solid color-mix(in srgb, var(--gold) 55%, transparent); transition: border-color .2s ease; }
 .insta:active span, .foot-link:active span { border-color: var(--gold); }
 @media (hover: hover) { .insta:hover span, .foot-link:hover span { border-color: var(--gold); } }
+.wifi {
+  display: inline-flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 4px 9px; margin: 16px 0 0;
+  font: 15px/1 var(--display); letter-spacing: .06em; color: var(--ink);
+  text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 14px rgba(0,0,0,.8);
+}
+.wifi-ico { flex: none; color: var(--gold); filter: drop-shadow(0 1px 6px rgba(0,0,0,.6)); }
+/* the password copies on tap; the label flips to "Скопійовано" for a moment */
+.wifi-pass {
+  all: unset; cursor: pointer; position: relative; padding: 6px 10px; margin: -6px 0; border-radius: 8px;
+  font: 15px/1 var(--display); letter-spacing: .08em; color: var(--ink); font-variant-numeric: lining-nums;
+  -webkit-tap-highlight-color: transparent;
+}
+.wifi-pass::after {
+  content: ''; position: absolute; left: 10px; right: 10px; bottom: 1px; height: 1px;
+  background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--gold) 70%, transparent) 0 3px, transparent 3px 6px);
+}
+.wifi-pass.copied { color: var(--gold); }
 
 /* ---------- sticky nav: a frosted strip with text links ---------- */
 .bar {
@@ -495,6 +517,18 @@ const JS = /* js */ `
     if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
   }, { passive: true });
   onScroll();
+
+  // wifi password: tap to copy
+  var pass = document.querySelector('.wifi-pass');
+  if (pass) pass.addEventListener('click', function () {
+    var value = pass.dataset.copy;
+    function done() {
+      pass.textContent = 'Скопійовано';
+      pass.classList.add('copied');
+      setTimeout(function () { pass.textContent = value; pass.classList.remove('copied'); }, 1600);
+    }
+    if (navigator.clipboard) navigator.clipboard.writeText(value).then(done, function () {});
+  });
 
   // item detail sheet
   var sheet = document.getElementById('sheet');
