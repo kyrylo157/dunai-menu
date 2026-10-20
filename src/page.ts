@@ -98,6 +98,8 @@ const GEM = `<svg class="gem" viewBox="0 0 20 24" width="14" height="17" aria-hi
   <path d="M10 1 19 9 10 23 1 9Z" fill="url(#gem-fill)" stroke="currentColor" stroke-width=".9" stroke-linejoin="round"/>
   <path d="M1 9h18M10 1 6.5 9 10 23 13.5 9Z" fill="none" stroke="currentColor" stroke-width=".6" stroke-linejoin="round" opacity=".75"/>
 </svg>`;
+/** The crystal between two hairlines, as in the footer. */
+const ORNAMENT = `<span class="rule" aria-hidden="true"><span></span>${GEM}<span></span></span>`;
 const GEM_DEFS = `<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <linearGradient id="gem-fill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4DC" stop-opacity=".55"/><stop offset=".5" stop-color="#E2C27D" stop-opacity=".18"/><stop offset="1" stop-color="#E2C27D" stop-opacity=".45"/></linearGradient>
 </defs></svg>`;
@@ -125,7 +127,7 @@ export function renderMenu(s: Settings, cats: Category[], all: Item[]): string {
 
   const tabs = present.length > 1
     ? `<div class="tabs" role="tablist">${present.map(([sec, label], i) =>
-        `<a class="tab" role="tab" href="#${sec}" data-tab="${sec}" aria-selected="${i === 0}">${label}</a>`).join(GEM)}</div>`
+        `<a class="tab" role="tab" href="#${sec}" data-tab="${sec}" aria-selected="${i === 0}">${label}</a>`).join(ORNAMENT)}</div>`
     : '';
 
   const chips = present.map(([sec]) =>
@@ -187,7 +189,7 @@ ${sections || '<p class="empty glass">Меню оновлюється. Загл�
 </main>
 
 ${s.instagram ? `<footer class="foot">
-  <div class="foot-rule" aria-hidden="true"><span></span>${GEM}<span></span></div>
+  <div class="foot-rule">${ORNAMENT}</div>
   <p class="foot-title">Зазирніть до нас в Instagram</p>
   <p class="foot-text">Нові страви, святкові вечори та атмосфера ${h(name)}</p>
   ${instaLink('foot-link')}
@@ -317,9 +319,14 @@ a { color: inherit; }
   backdrop-filter: blur(22px) saturate(1.6); -webkit-backdrop-filter: blur(22px) saturate(1.6);
   box-shadow: 0 12px 30px -20px rgba(0,0,0,.6);
 }
-.tabs { display: flex; justify-content: center; align-items: center; gap: 30px; padding: 14px 16px 0; }
+.tabs { display: flex; justify-content: center; align-items: center; gap: 18px; padding: 14px 16px 0; }
 .gem { flex: none; color: var(--gold); filter: drop-shadow(0 0 6px color-mix(in srgb, var(--gold) 45%, transparent)); }
-.tabs .gem { margin-bottom: 9px; }
+/* hairline, crystal, hairline: used between the tabs and above the footer */
+.rule { display: flex; align-items: center; gap: 12px; }
+.rule > span { width: 64px; height: 1px; background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold) 70%, transparent)); }
+.rule > span:last-child { transform: scaleX(-1); }
+.tabs .rule { margin-bottom: 9px; gap: 10px; }
+.tabs .rule > span { width: 38px; }
 .tab {
   position: relative; text-decoration: none; padding: 2px 2px 10px;
   font: 18px/1.2 var(--display); letter-spacing: .08em; color: var(--muted); transition: color .25s ease;
@@ -408,9 +415,7 @@ li:last-child > .row { border-bottom: 0; }
   padding: 44px 24px calc(56px + env(safe-area-inset-bottom));
   background: radial-gradient(60% 55% at 50% 52%, rgba(12,9,11,.62), rgba(12,9,11,0));
 }
-.foot-rule { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
-.foot-rule span { width: 64px; height: 1px; background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold) 70%, transparent)); }
-.foot-rule span:last-child { transform: scaleX(-1); }
+.foot-rule { margin-bottom: 22px; }
 .foot-title { margin: 0; max-width: 18ch; font: 27px/1.2 var(--serif); text-wrap: balance; }
 .foot-text { margin: 10px 0 22px; max-width: 30ch; color: var(--muted); font-size: 15px; line-height: 1.5; }
 .foot-link { color: var(--ink); font-size: 16px; }
