@@ -321,14 +321,11 @@ async function savePhoto(ctx: Ctx, msg: TgMessage): Promise<string | null> {
   if (!fileId) return null;
   const buf = await downloadFile(ctx.env, fileId);
   if (!buf) return null;
-  const ext = type.split('/')[1]?.replace('jpeg', 'jpg') ?? 'jpg';
-  const key = `p/${crypto.randomUUID()}.${ext}`;
-  await ctx.env.PHOTOS.put(key, buf, { httpMetadata: { contentType: type } });
-  return key;
+  return db.putPhoto(ctx.env.DB, buf, type);
 }
 
 async function dropPhoto(env: Env, photo: string | null) {
-  if (photo && !/^https?:/.test(photo)) await env.PHOTOS.delete(photo);
+  await db.deletePhoto(env.DB, photo);
 }
 
 // ---------- callbacks ----------

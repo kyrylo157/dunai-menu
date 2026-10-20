@@ -8,11 +8,9 @@
     {
       "binding": "DB",
       "database_name": "dunai-menu",
-      // replaced with the real id after `wrangler d1 create dunai-menu`
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "9c14f83e-2ec1-46ee-8e5a-56ecdbfea3a4",
       "migrations_dir": "migrations"
     }
-  ],
-  "r2_buckets": [{ "binding": "PHOTOS", "bucket_name": "dunai-menu-photos" }]
+  ]
   // secrets (wrangler secret put): BOT_TOKEN, ADMIN_PASSWORD, WEBHOOK_SECRET
 }

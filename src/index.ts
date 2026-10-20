@@ -25,14 +25,13 @@ export default {
     }
 
     if (req.method === 'GET' && path.startsWith('/img/')) {
-      const obj = await env.PHOTOS.get(decodeURIComponent(path.slice(5)));
-      if (!obj) return new Response('Not found', { status: 404 });
-      return new Response(obj.body, {
+      const photo = await db.getPhoto(env.DB, decodeURIComponent(path.slice(5)));
+      if (!photo) return new Response('Not found', { status: 404 });
+      return new Response(photo.data, {
         headers: {
-          'content-type': obj.httpMetadata?.contentType ?? 'image/jpeg',
+          'content-type': photo.type,
           // keys are unique per upload, so the file never changes
           'cache-control': 'public, max-age=31536000, immutable',
-          etag: obj.httpEtag,
         },
       });
     }
@@ -81,10 +80,7 @@ async function importPhotos(env: Env) {
       console.warn('import failed', res.status, src);
       return null;
     }
-    const type = res.headers.get('content-type') ?? 'image/jpeg';
-    const key = `p/${crypto.randomUUID()}.${type.includes('png') ? 'png' : 'jpg'}`;
-    await env.PHOTOS.put(key, await res.arrayBuffer(), { httpMetadata: { contentType: type } });
-    return key;
+    return db.putPhoto(env.DB, await res.arrayBuffer(), res.headers.get('content-type') ?? 'image/jpeg');
   }
 
   if (s.logo?.startsWith('http')) {

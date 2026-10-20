@@ -1,6 +1,5 @@
 export interface Env {
   DB: D1Database;
-  PHOTOS: R2Bucket;
   BOT_TOKEN: string;
   ADMIN_PASSWORD: string;
   WEBHOOK_SECRET: string;
@@ -105,6 +104,27 @@ export async function move(db: D1Database, table: 'categories' | 'items', id: nu
 export async function nextSort(db: D1Database, table: 'categories' | 'items', where: string, arg: string | number) {
   const r = await db.prepare(`SELECT COALESCE(MAX(sort), -1) + 1 AS s FROM ${table} WHERE ${where} = ?`).bind(arg).first<{ s: number }>();
   return r?.s ?? 0;
+}
+
+// D1 caps a single value at 2 MB; Telegram photos are far below that
+const MAX_PHOTO_BYTES = 1_900_000;
+
+export async function putPhoto(db: D1Database, data: ArrayBuffer, type: string): Promise<string | null> {
+  if (data.byteLength > MAX_PHOTO_BYTES) return null;
+  const key = `p/${crypto.randomUUID()}.${type.includes('png') ? 'png' : type.includes('webp') ? 'webp' : 'jpg'}`;
+  await db.prepare('INSERT INTO photos (key, type, data) VALUES (?, ?, ?)').bind(key, type, data).run();
+  return key;
+}
+
+export async function getPhoto(db: D1Database, key: string) {
+  const r = await db.prepare('SELECT type, data FROM photos WHERE key = ?').bind(key).first<{ type: string; data: number[] | ArrayBuffer }>();
+  if (!r) return null;
+  return { type: r.type, data: r.data instanceof ArrayBuffer ? r.data : new Uint8Array(r.data).buffer };
+}
+
+/** Removes a stored photo; external URLs are left alone. */
+export async function deletePhoto(db: D1Database, photo: string | null) {
+  if (photo && !/^https?:/.test(photo)) await db.prepare('DELETE FROM photos WHERE key = ?').bind(photo).run();
 }
 
 export function priceText(p: number): string {
